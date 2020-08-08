@@ -46,7 +46,7 @@ if __name__ == "__main__":
         try:
             rec = client_base['FATHER'].recv(1024)
             print(rec)
-            dest, sender, data, key = rec.split(b"//youasshole//")
+            dest, sender, data, key = rec.split(b"//sep//")
             dest = dest.decode("utf8")
             print(dest)
             try:
